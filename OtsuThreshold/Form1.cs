@@ -30,6 +30,7 @@ namespace OtsuThreshold
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Image = Bitmap.FromFile(openFileDialog1.FileName);
+                pictureBox3.Image = Bitmap.FromFile(openFileDialog1.FileName);
                 org = (Bitmap)pictureBox1.Image.Clone();
             }
         }
