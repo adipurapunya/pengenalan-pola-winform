@@ -13,7 +13,8 @@ namespace OtsuThreshold
     {
         private Otsu ot = new Otsu();
         private Thining th = new Thining();
-        private Bitmap org,org2;
+        private Histogram his = new Histogram();
+        private Bitmap org,org2,org3;
 
         private Histograma.HistogramaDesenat Histogram;
 
@@ -32,6 +33,7 @@ namespace OtsuThreshold
                 pictureBox1.Image = Bitmap.FromFile(openFileDialog1.FileName);
                 pictureBox3.Image = Bitmap.FromFile(openFileDialog1.FileName);
                 org = (Bitmap)pictureBox1.Image.Clone();
+                org3 = (Bitmap)pictureBox3.Image.Clone();
             }
         }
 
@@ -109,6 +111,43 @@ namespace OtsuThreshold
             bool[][] t = th.ImageCheckToBool(temp);
             t = th.ZhangSuenThinning(t);
             pictureBox2.Image = th.Bool2Image(t);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //if (txtFileName.Text != "" && System.IO.File.Exists(txtFileName.Text))
+            //{
+                //sbInfo.Text = "Loading image";
+                if (pictureBox3.Image != null)
+                    pictureBox3.Image.Dispose();
+
+                pictureBox3.Image = Image.FromFile(label2.Text);
+
+                //Application.DoEvents();
+
+                //Bitmap temp = (Bitmap)org.Clone();    
+
+                //sbInfo.Text = "Computing histogram";
+                long[] myValues = his.GetHistogram(new Bitmap(pictureBox3.Image));
+
+                //Histogram.DrawHistogram(myValues);
+                Histogram2.DrawHistogram(myValues);
+            //sbInfo.Text = "";
+            //}
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            ofd.CheckFileExists = true;
+            ofd.CheckPathExists = true;
+
+            ofd.ShowDialog();
+
+            if (ofd.FileName != "")
+                label2.Text = ofd.FileName;
+            pictureBox3.Image = Bitmap.FromFile(ofd.FileName);
         }
 
         

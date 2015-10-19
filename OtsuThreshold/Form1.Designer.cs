@@ -42,22 +42,38 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Thining = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Histo = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Histogram2 = new Histograma.HistogramaDesenat();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.histogramaDesenat1 = new Histograma.HistogramaDesenat();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.Thining.SuspendLayout();
+            this.Histo.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -160,32 +176,33 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Controls.Add(this.Thining);
+            this.tabControl1.Controls.Add(this.Histo);
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(934, 629);
             this.tabControl1.TabIndex = 12;
             // 
-            // tabPage1
+            // Thining
             // 
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(926, 603);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.Thining.Controls.Add(this.button5);
+            this.Thining.Controls.Add(this.groupBox2);
+            this.Thining.Controls.Add(this.textBox1);
+            this.Thining.Controls.Add(this.label1);
+            this.Thining.Controls.Add(this.button4);
+            this.Thining.Controls.Add(this.groupBox1);
+            this.Thining.Controls.Add(this.button3);
+            this.Thining.Controls.Add(this.button1);
+            this.Thining.Controls.Add(this.button2);
+            this.Thining.Location = new System.Drawing.Point(4, 22);
+            this.Thining.Name = "Thining";
+            this.Thining.Padding = new System.Windows.Forms.Padding(3);
+            this.Thining.Size = new System.Drawing.Size(926, 603);
+            this.Thining.TabIndex = 0;
+            this.Thining.Text = "Thining";
+            this.Thining.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -197,18 +214,39 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // tabPage2
+            // Histo
             // 
-            this.tabPage2.Controls.Add(this.button6);
-            this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(926, 603);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.Histo.Controls.Add(this.label2);
+            this.Histo.Controls.Add(this.button7);
+            this.Histo.Controls.Add(this.button6);
+            this.Histo.Controls.Add(this.groupBox4);
+            this.Histo.Controls.Add(this.groupBox3);
+            this.Histo.Location = new System.Drawing.Point(4, 22);
+            this.Histo.Name = "Histo";
+            this.Histo.Padding = new System.Windows.Forms.Padding(3);
+            this.Histo.Size = new System.Drawing.Size(926, 603);
+            this.Histo.TabIndex = 1;
+            this.Histo.Text = "Histogram";
+            this.Histo.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 566);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Path";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(150, 524);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(132, 23);
+            this.button7.TabIndex = 15;
+            this.button7.Text = "Load Image";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -218,15 +256,27 @@
             this.button6.TabIndex = 14;
             this.button6.Text = "Show Histogram";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.Histogram2);
             this.groupBox4.Location = new System.Drawing.Point(427, 6);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(493, 494);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "HISTOGRAM";
+            // 
+            // Histogram2
+            // 
+            this.Histogram2.DisplayColor = System.Drawing.Color.Black;
+            this.Histogram2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Histogram2.Location = new System.Drawing.Point(6, 19);
+            this.Histogram2.Name = "Histogram2";
+            this.Histogram2.Offset = 20;
+            this.Histogram2.Size = new System.Drawing.Size(481, 475);
+            this.Histogram2.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -247,6 +297,87 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
+            //Histo Equalization
+            // 
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.button8);
+            this.tabPage1.Controls.Add(this.button9);
+            this.tabPage1.Controls.Add(this.groupBox5);
+            this.tabPage1.Controls.Add(this.groupBox6);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(926, 603);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Histogram Equalisasi";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.histogramaDesenat1);
+            this.groupBox5.Location = new System.Drawing.Point(427, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(493, 494);
+            this.groupBox5.TabIndex = 15;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "HISTOGRAM EQUALIZATION";
+            // 
+            // histogramaDesenat1
+            // 
+            this.histogramaDesenat1.DisplayColor = System.Drawing.Color.Black;
+            this.histogramaDesenat1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.histogramaDesenat1.Location = new System.Drawing.Point(6, 19);
+            this.histogramaDesenat1.Name = "histogramaDesenat1";
+            this.histogramaDesenat1.Offset = 20;
+            this.histogramaDesenat1.Size = new System.Drawing.Size(481, 475);
+            this.histogramaDesenat1.TabIndex = 0;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.pictureBox4);
+            this.groupBox6.Location = new System.Drawing.Point(6, 6);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(415, 494);
+            this.groupBox6.TabIndex = 14;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "BEFORE";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(396, 469);
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 565);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Path";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(203, 523);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(132, 23);
+            this.button8.TabIndex = 18;
+            this.button8.Text = "Load Image";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(12, 523);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(174, 23);
+            this.button9.TabIndex = 17;
+            this.button9.Text = "Show Histogram Equalization";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,11 +392,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.Thining.ResumeLayout(false);
+            this.Thining.PerformLayout();
+            this.Histo.ResumeLayout(false);
+            this.Histo.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,13 +423,24 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage Thining;
+        private System.Windows.Forms.TabPage Histo;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button6;
+        private Histograma.HistogramaDesenat Histogram2;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private Histograma.HistogramaDesenat histogramaDesenat1;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
 

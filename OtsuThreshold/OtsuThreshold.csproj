@@ -60,6 +60,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Histogram.cs" />
     <Compile Include="HistogramaDesenat.cs">
       <SubType>UserControl</SubType>
     </Compile>
